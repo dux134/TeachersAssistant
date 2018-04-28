@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.aktu.root.teachersassistant">
+
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.LightNoActionBar">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ResetPassword" />
+        <activity
+            android:name=".admin.AdminDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".student.StudentDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".teacher.TeacherDashboard"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".teacher.AddStudent"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Add Student"/>
+        <activity
+            android:name=".teacher.UpdateYourAccount"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Update Your Account"/>
+        <activity
+            android:name=".teacher.getuserinfo.GetStudentInfo"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Student Info."/>
+        <activity
+            android:name=".teacher.takeattendence.TakeAttendenceActivity"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Take Attendence"/>
+        <activity
+            android:name=".teacher.post_file.PostAssignment"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Post Assignment"/>
+        <activity
+            android:name=".teacher.post_file.PostNotes"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Post Notes"/>
+        <activity
+            android:name=".teacher.post_file.ManageNotes"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Manage Notes"/>
+        <activity
+            android:name=".teacher.post_file.ManageAssignment"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Manage Assignment"/>
+        <activity
+            android:name=".student.StudentUpdateDetails"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Update Your Account"/>
+        <activity
+            android:name=".student.StudentViewNotes"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="View Notes"/>
+        <activity
+            android:name=".student.StudentViewAssignment"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="View Assignment"/>
+
+        <service android:name=".Notification.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <!-- <service android:name=".Notification.MyFirebaseInstanceIDService"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="com.google.firebase.INSTANCE_ID_EVENT" /> -->
+        <!-- </intent-filter> -->
+        <!-- </service> -->
+        <activity
+            android:name=".admin.AddTeacher"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Add Teacher"/>
+        <activity android:name=".Chat"
+            android:theme="@style/AppTheme.LightNoActionBar"
+            android:label="Discussion Form"></activity>
+    </application>
+
+</manifest>

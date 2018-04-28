@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "787185739024",
+    "firebase_url": "https://teachersassistant-26f77.firebaseio.com",
+    "project_id": "teachersassistant-26f77",
+    "storage_bucket": "teachersassistant-26f77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:787185739024:android:5f0e25e3a69c3784",
+        "android_client_info": {
+          "package_name": "com.aktu.root.teachersassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "787185739024-g0ofgveskk8unri4oap305f06hb2i1si.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.aktu.root.teachersassistant",
+            "certificate_hash": "787617a308b2f12e6b999a81cac421ac0da8bf61"
+          }
+        },
+        {
+          "client_id": "787185739024-fkf0fge0d79bvmoapel30lpcb8clkqrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBnfu_HQqwrnyyc5IHgg_WGMoxYJDoF_A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "787185739024-fkf0fge0d79bvmoapel30lpcb8clkqrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
